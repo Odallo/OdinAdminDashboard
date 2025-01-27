@@ -1,0 +1,101 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.left-section {
+    flex: 1;
+    background-color: aquamarine;
+}
+
+.right-section {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    background-color: antiquewhite;
+}
+
+.top-section {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.left-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-bar {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.user-name {
+    font-size: 1rem;
+}
+
+.right-top {
+    display: flex;
+    gap: 10px;
+    align-self: flex-end;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #0078D4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #888a8d;
+}
+
+.bottom-section {
+    flex: 4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjusted size */
+    grid-template-rows: auto repeat(3, 1fr); /* Added auto row for title */
+    gap: 32px;
+    padding: 20px;
+    background-color: rgb(167, 180, 118);
+    color: black;
+}
+
+.section-title {
+    grid-column: span 2; /* Make the title span across both columns */
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.small-rectangle {
+    background-color: peachpuff;
+    border: 1px solid black;
+}
