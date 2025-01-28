@@ -10,6 +10,11 @@ body {
     width: 100%;
 }
 
+h2 {
+    color: #0078D4;
+    align-self: center;
+}
+
 .left-section {
     flex: 1;
     background-color: aquamarine;
@@ -80,8 +85,8 @@ body {
 .bottom-section {
     flex: 4;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Adjusted size */
-    grid-template-rows: auto repeat(3, 1fr); /* Added auto row for title */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto repeat(3, 1fr);
     gap: 32px;
     padding: 20px;
     background-color: rgb(167, 180, 118);
@@ -89,13 +94,17 @@ body {
 }
 
 .section-title {
-    grid-column: span 2; /* Make the title span across both columns */
+    grid-column: span 2;
     font-size: 1.5rem;
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
 }
 
 .small-rectangle {
     background-color: peachpuff;
     border: 1px solid black;
+    display: flex;
+    justify-content: center; 
+    align-items: top; 
+    padding-top: 10px; 
 }
